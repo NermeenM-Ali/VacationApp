@@ -85,7 +85,7 @@ export default class PickerInput extends Component<PickerInputProps, any> {
 
 const styles = StyleSheet.create({
     pickerContainer: {
-        width: scale(342),
+        width: scale(360),
         height: verticalScale(65),
         alignSelf: 'center',
         justifyContent: 'space-between',
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
         backgroundColor: colors.WHITE_COLOR,
         borderRadius: moderateScale(10),
         marginTop: verticalScale(15),
-        width: scale(342),
+        width: scale(360),
         height: verticalScale(65),
         alignSelf: 'center',
         justifyContent: 'space-between',
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
         color: colors.MAIN_COLOR,
         fontSize: moderateScale(25),
         position: 'absolute',
-        right: scale(10)
+        right: scale(0)
     },
     selectedVal: {
         fontFamily: Fonts.REGULAR,
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
         fontSize: moderateScale(10)
     },
     errorContainer: {
-        width: '78%',
+        width: '83%',
         alignSelf: 'center',
         marginTop: verticalScale(12)
     },

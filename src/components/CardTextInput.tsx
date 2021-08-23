@@ -53,7 +53,7 @@ export default class CardTextInput extends PureComponent<CardTextInputProps>{
 
 const styles = StyleSheet.create({
     inputContainer: {
-        width: scale(342),
+        width: scale(360),
         height: verticalScale(65),
         backgroundColor: colors.WHITE_COLOR,
         borderRadius: moderateScale(10),
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
         borderWidth: scale(1.5),
     },
     input: {
-        width: scale(340),
+        width: scale(360),
         height: verticalScale(65),
         color: colors.BLACK_COLOR,
         paddingHorizontal: scale(10),
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         fontSize: moderateScale(10)
     },
     errorContainer: {
-        width: '78%',
+        width: '83%',
         alignSelf: 'center',
         marginTop: verticalScale(5)
     },

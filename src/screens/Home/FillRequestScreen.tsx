@@ -46,18 +46,18 @@ class FillRequestScreen extends Component<FillRequestScreenProps, FillRequestScr
     }
     renderFormInputs() {
         const initialData = {
-            name: null,
-            mobile: null,
-            startDate: null,
-            numberOfDays: null,
-            department: null
+            name: '',
+            mobile: '',
+            startDate: '',
+            numberOfDays: '',
+            department: ''
         };
         const ValidationSchema = Yup.object().shape({
-            startDate: Yup.string().required('required').nullable(),
-            name: Yup.string().required('required').nullable(),
-            department: Yup.string().required('required').nullable(),
-            numberOfDays: Yup.number().required('required').nullable(),
-            mobile: Yup.string().nullable()
+            startDate: Yup.string().required('required'),
+            name: Yup.string().required('required'),
+            department: Yup.string().required('required'),
+            numberOfDays: Yup.string().required('required'),
+            mobile: Yup.string()
                 .min(11, 'phone number must be 11 numbers')
                 .max(11, 'phone number must be 11 numbers')
                 .optional(),
@@ -102,7 +102,6 @@ class FillRequestScreen extends Component<FillRequestScreenProps, FillRequestScr
                                     inputRef={(input: any) => { this.inputsFailed.mobile = input; }}
                                     error={formikProps.errors.mobile}
                                     touched={formikProps.touched.mobile}
-                                    onBlur={() => formikProps.setFieldTouched('mobile')}
                                     onSubmitEditing={() => { Keyboard.dismiss() }} />
                                 <InputDate
                                     value={formikProps.values.startDate}
