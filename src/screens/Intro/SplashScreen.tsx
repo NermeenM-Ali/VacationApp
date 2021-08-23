@@ -11,7 +11,7 @@ interface SplashScreenProps {
 export default class SplashScreen extends Component<SplashScreenProps> {
     componentDidMount() {
         setTimeout(() => {
-            // this.props.navigation.replace('TabScreen')
+            this.props.navigation.replace('TabScreen')
         }, 2000)
     }
     render() {
