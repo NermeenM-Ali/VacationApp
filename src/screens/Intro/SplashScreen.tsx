@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
         height: '100%'
     },
     logoTxt: {
-        fontFamily: Fonts.LOGO_TXT_FONT,
+        fontFamily: Fonts.BOLD,
         fontSize: moderateScale(24),
         color: colors.WHITE_COLOR,
         marginTop: verticalScale(15)
